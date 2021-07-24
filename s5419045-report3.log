@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2021.5.19)  24 JUL 2021 01:47
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2021.5.19)  24 JUL 2021 12:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -567,46 +567,49 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 42.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 42.
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 59.
  [2]
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 60.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 7
-2.
+3.
 
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [3]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 100.
+(Font)              <9> on input line 101.
  [4]
+File: images/hosoku.png Graphic file (type bmp)
+<images/hosoku.png>
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 41.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+) [5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
 \T1/lmtt/m/n/10 A7 % E3 % 81 % 84 % E3 % 81 % 86 % E3 % 81 % A8 ,[] %E3 % 81 % 
 AE % E9 % 9B % 86 % E5 % 90 % 88 % E3 % 82 % 92 % E6 % 8C % 87 % E3 % 81 %
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
-[5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
+[7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 207.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
  (./s5419045-report3.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 143.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 207.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
 Package rerunfilecheck Info: File `s5419045-report3.out' has not changed.
-(rerunfilecheck)             Checksum: BC550B5B1E5AD5BA6E5E037CF61B8B77;1143.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
+(rerunfilecheck)             Checksum: 3869100FDFD844B7A7EFF280849721C9;1045.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 207.
  ) 
 Here is how much of TeX's memory you used:
- 7482 strings out of 482863
- 110315 string characters out of 5959218
- 375352 words of memory out of 5000000
- 22594 multiletter control sequences out of 15000+600000
+ 7493 strings out of 482863
+ 110470 string characters out of 5959218
+ 375316 words of memory out of 5000000
+ 22600 multiletter control sequences out of 15000+600000
  608819 words of font info for 128 fonts, out of 8000000 for 9000
  269 hyphenation exceptions out of 8191
- 37i,10n,29p,742b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,10n,29p,742b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on s5419045-report3.dvi (5 pages, 24436 bytes).
+Output written on s5419045-report3.dvi (8 pages, 34800 bytes).
