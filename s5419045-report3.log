@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2021.5.19)  24 JUL 2021 14:54
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2021.5.19)  26 JUL 2021 01:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -323,6 +323,10 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen176
 \l_MT_below_shortintertext_sep=\dimen177
 )
+(/usr/share/texlive/texmf-dist/tex/latex/ncctools/nccmath.sty
+Package: nccmath 2006/01/20 v1.3 Additional Math Commands (NCC)
+\NCC@fracrulewidth=\dimen178
+)
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks22
@@ -340,7 +344,7 @@ Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip61
 \multirow@cntb=\count269
 \multirow@dima=\skip62
-\bigstrutjot=\dimen178
+\bigstrutjot=\dimen179
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -359,12 +363,12 @@ Package graphics Info: Driver file: dvipdfmx.def on input line 105.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
 ))
-\Gin@req@height=\dimen179
-\Gin@req@width=\dimen180
+\Gin@req@height=\dimen180
+\Gin@req@width=\dimen181
 )
 (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen181
-\WF@size=\dimen182
+\wrapoverhang=\dimen182
+\WF@size=\dimen183
 \c@WF@wrappedlines=\count270
 \WF@box=\box65
 \WF@everypar=\toks28
@@ -384,23 +388,23 @@ Package: ascmac 2020/01/15 v2.1 ascmac wrapper (community edition)
 
 (/usr/share/texlive/texmf-dist/tex/latex/ascmac/tascmac.sty
 Package: tascmac 2020/01/15 v2.1 ascmac package (community edition) 
-\@savetbaselineshift=\dimen183
-\@saveybaselineshift=\dimen184
+\@savetbaselineshift=\dimen184
+\@saveybaselineshift=\dimen185
 \scb@x=\box68
 \scscb@x=\box69
-\@bw=\dimen185
+\@bw=\dimen186
 \@nbox=\box70
 \@nbody=\box71
-\@scw=\dimen186
+\@scw=\dimen187
 \ascmac@hoboxa=\box72
 \ascmac@hoboxb=\box73
-\@itemh=\dimen187
+\@itemh=\dimen188
 \@iboxpos=\toks31
 \@iboxstr=\box74
 \@bwsp=\box75
 \@@bwsp=\box76
 \@bcal=\count272
-\shaderule=\dimen188
+\shaderule=\dimen189
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 File: l3backend-dvipdfmx.def 2020-02-03 L3 backend support: dvipdfmx
@@ -412,36 +416,36 @@ File: l3backend-dvipdfmx.def 2020-02-03 L3 backend support: dvipdfmx
 (./s5419045-report3.aux)
 \openout1 = `s5419045-report3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
  (I search kanjifont definition file: . . )
 (I search font definition file: . . . . . . . . )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 22
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 23
 .
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box78
-Package hyperref Info: Link coloring OFF on input line 22.
+Package hyperref Info: Link coloring OFF on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -454,161 +458,161 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count276
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
 
 (./s5419045-report3.out) (./s5419045-report3.out)
 \@outlinefile=\write3
 \openout3 = `s5419045-report3.out'.
 
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 25.
+(Font)              scaled to size 16.60605pt on input line 26.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 25.
+(Font)              scaled to size 16.60605pt on input line 26.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 25.
+(Font)              scaled to size 11.53198pt on input line 26.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 25.
+(Font)              scaled to size 11.53198pt on input line 26.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-5.
+6.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-5.
+6.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-25.
+26.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-25.
+26.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 25.
+(Font)              <12> on input line 26.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 25.
+(Font)              <8> on input line 26.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 25.
+(Font)              <6> on input line 26.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 25.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 25
+(Font)              scaled to size 5.76599pt on input line 26.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 26
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 26.
+(Font)              scaled to size 8.64899pt on input line 27.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 26.
+(Font)              scaled to size 8.64899pt on input line 27.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 26.
+(Font)              scaled to size 8.64899pt on input line 27.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 26.
+(Font)              scaled to size 8.64899pt on input line 27.
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 2
-6.
+7.
 
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 31.
+(Font)              scaled to size 13.83836pt on input line 32.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 31.
+(Font)              scaled to size 13.83836pt on input line 32.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 31.
+(Font)              scaled to size 13.83836pt on input line 32.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 31.
+(Font)              scaled to size 13.83836pt on input line 32.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 35.
+(Font)              scaled to size 11.53198pt on input line 36.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 35.
+(Font)              scaled to size 11.53198pt on input line 36.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 38.
+(Font)              <10> on input line 39.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 38.
+(Font)              <7> on input line 39.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 38.
+(Font)              <5> on input line 39.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 38.
+(Font)              scaled to size 6.72699pt on input line 39.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 38.
+(Font)              scaled to size 4.805pt on input line 39.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 38.
+(Font)              scaled to size 6.72699pt on input line 39.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 38.
+(Font)              scaled to size 5.76599pt on input line 39.
  [1
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 42.
+(Font)              scaled to size 9.60999pt on input line 43.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 42.
+(Font)              scaled to size 9.60999pt on input line 43.
  [2]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 60.
+(Font)              scaled to size 4.805pt on input line 61.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 7
-3.
+4.
 
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [3]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 101.
+(Font)              <9> on input line 103.
  [4]
 File: images/hosoku.png Graphic file (type bmp)
 <images/hosoku.png>
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-41.
+44.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [5] [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+) [5] [6] [7] [8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
 \T1/lmtt/m/n/10 A7 % E3 % 81 % 84 % E3 % 81 % 86 % E3 % 81 % A8 ,[] %E3 % 81 % 
 AE % E9 % 9B % 86 % E5 % 90 % 88 % E3 % 82 % 92 % E6 % 8C % 87 % E3 % 81 %
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 226.
-[8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 226.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 306.
+[10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 306.
  (./s5419045-report3.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 226.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 226.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 306.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 306.
 Package rerunfilecheck Info: File `s5419045-report3.out' has not changed.
-(rerunfilecheck)             Checksum: 3869100FDFD844B7A7EFF280849721C9;1045.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
+(rerunfilecheck)             Checksum: 7FAFAE7C7F866C3B593548659A02A051;639.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 306.
  ) 
 Here is how much of TeX's memory you used:
- 7493 strings out of 482863
- 110470 string characters out of 5959218
- 375316 words of memory out of 5000000
- 22600 multiletter control sequences out of 15000+600000
+ 7590 strings out of 482863
+ 111581 string characters out of 5959218
+ 377827 words of memory out of 5000000
+ 22693 multiletter control sequences out of 15000+600000
  608819 words of font info for 128 fonts, out of 8000000 for 9000
  269 hyphenation exceptions out of 8191
- 37i,14n,29p,742b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,17n,29p,742b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on s5419045-report3.dvi (8 pages, 37060 bytes).
+Output written on s5419045-report3.dvi (10 pages, 47756 bytes).
