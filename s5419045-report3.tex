@@ -273,6 +273,13 @@
     = \frac{|\{ t \in D | (X\cup Y) \subseteq t\}|}{|\{ t \in D | X \subseteq t\}|}
   \end{align*}
 \end{fleqn}
+頻出アイテム集合の要素数が多いとき、考えられる相関ルールの組み合わせも非常に多くなるため組み合わせ爆発\footnote{}が発生する可能性がある。考えられる相関ルールの総数は$\Sigma_{k=2}^{|I|}\frac{|I|}{K}\times (2^{K}-2)$となるため、アイテム集合の要素が多いと相関ルールの数も大きくなるのが分かるであろう。したがって、事前に確信度を計算することなく、相関ルールから除外する必要が出てくる。ここで、頻出パターン抽出で支持度の逆単調性の利用と同様に「確信度の逆単調性」を利用する。
+\paragraph{確信度の逆単調性}
+\begin{gather*}
+  \forall Z \subset X[ conf_{D}(X, Y) \geq conf_{D}(X \setminus Z, Y \cup Z)] \\
+  conf__{D} < min_conf \rightarrow \forall Z \subset X[conf_{D}(X \setminus Z, Y \cup Z)]
+\end{gather*}
+つまり、$X, Y$の確信度が最小確信度未満であるとき、そのすべての部分集合$Z$の確信度も最小確信度未満である、という性質である。
 \subsubsection{相関ルール分析の評価基準}
 \paragraph{支持度と確信度の弱点}
 \paragraph{Lift値}
