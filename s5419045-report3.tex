@@ -341,22 +341,122 @@ Lift値は、$X, Y$を独立と仮定したときの比であるので、値が1
 \subsection{実験準備}
   \subsubsection{実験環境}
   今回の実験は仮想マシン上でR言語を起動し行った。下記に実験時の環境を示す。
+    \begin{itemize}
+      \item ホストOS：Window10 Home Ver.20H2
+      \item 仮想OS：Ubuntu 20.04.2 LTS
+      \item CPU：Intel(R)Core(TM)i7-9700K @ 3.6GHz
+      \item GPU：Nvidia Geforce RTX2070 OC @ 8GB
+      \item ホストRAM：16GB
+      \item 仮想RAM：4GB
+    \end{itemize}
+  \subsubsection{実験データ}
+  今回の実験で使用するデータは、R言語のライブラリarulesに付属しているGroceriesと呼ばれるデータを使用する。以下にこのデータの概要を示す。
   \begin{itemize}
-    \item ホストOS：Window10 Home Ver.20H2
-    \item 仮想OS：Ubuntu 20.04.2 LTS
-    \item CPU：Intel(R)Core(TM)i7-9700K @ 3.6GHz
-    \item GPU：Nvidia Geforce RTX2070 OC @ 8GB
-    \item ホストRAM：16GB
-    \item 仮想RAM：4GB
+    \item 行数：9835, 列数：169
+    \item 主要なアイテム：milk, vegetables, rolls/buns, soba, yogurut
+    \item 先頭5行分データ
+    \begin{verbatim}
+> head(as(Groceries, "data.frame"),5)
+                                                                  items
+1              {citrus fruit,semi-finished bread,margarine,ready soups}
+2                                        {tropical fruit,yogurt,coffee}
+3                                                          {whole milk}
+4                         {pip fruit,yogurt,cream cheese ,meat spreads}
+5 {other vegetables,whole milk,condensed milk,long life bakery product}
+
+    \end{verbatim}
   \end{itemize}
-\subsubsection{実験データ}
+なお基本統計量は下記。
+  \begin{itemize}
+    \item 最小値：1.000
+    \item 第一四分位数：2.000
+    \item 中央値：3.000
+    \item 第三四分位数：6.000
+    \item 最大値：32.000
+  \end{itemize}
+  なお平均値は4.409である。また、出現回数上位5アイテムとその出現回数は次の通り。
+  \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{images/groceri_freq.png}
+    \caption{出現するアイテムとその頻度}
+  \end{figure}
 \subsubsection{R言語での頻出パターン・相関ルール分析の手法}
+\paragraph{頻度アイテム集合の抽出}
+頻出アイテム集合の抽出と相関ルール抽出には、先に示したように深さ優先探索的な手法と、幅優先探索的な手法の２種類が存在する。それらの方法はそれぞれR言語では「eclat」「Apriori」と呼ばれる関数を使用することで実現できる。\par
+eclat関数は頻出パターン抽出を行う関数である。以下説明する。
+\begin{centering}
+  変数 <- eclat(データ, parameter= list(support, minlen, maxlen,target))
+\end{centering}
+このとき、supportは最小支持度でデフォルト値は0.02、minlenは頻出アイテム集合の最小サイズでデフォルト値は1、maxlenは頻出アイテム集合の最大サイズでデフォルト値は10、targetは頻出アイテム集合の種類（頻出パターン、飽和パターン、極大パターン）を指定する。\par
+\paragraph{相関ルールの抽出}
+Apriori関数は相関ルールの導出を行う関数である。
+\begin{centering}
+  変数名 <- apriori(データ, parameter=list(support, confidence, maxlen, minlen))
+\end{centering}
+supportはルールの最小支持度でデフォルト値は0.1, confidenceはルールの最小確信度でデフォルト値は0.8, maxlenはルールの前提部と帰結部の合計サイズがこのパラメータ値以下の相関ルールを対象とする、デフォルト値は5。minlenはルールの前提部と帰結部の合計サイズがこのパラメータ値以上の相関ルールを対象とする。
 \subsection{実験結果}
-\subsection{結果の説明}
+まず、デフォルト値で頻出パターン抽出を行った結果を以下に示す。
+\begin{verbatim}
+  > inspect(groce.freq)
+    items              support   transIdenticalToItemsets count
+[1] {whole milk}       0.2555160 2513                     2513
+[2] {other vegetables} 0.1934926 1903                     1903
+[3] {rolls/buns}       0.1839349 1809                     1809
+[4] {yogurt}           0.1395018 1372                     1372
+[5] {soda}             0.1743772 1715                     1715
+[6] {root vegetables}  0.1089985 1072                     1072
+[7] {tropical fruit}   0.1049314 1032                     1032
+[8] {bottled water}    0.1105236 1087                     1087
+\end{verbatim}
+また、パラメータの値を以下のように変更して頻出パターン抽出を行ってみた。
+\begin{itemize}
+  \item support=0.05
+  \item minlen = 2
+  \item maxlen = 5
+\end{itemize}
+この時の結果は次の通り。
+\begin{verbatim}
+  > inspect(groce.freq)
+    items                         support    transIdenticalToItemsets count
+[1] {whole milk,yogurt}           0.05602440 551                      551
+[2] {whole milk,rolls/buns}       0.05663447 557                      557
+[3] {other vegetables,whole milk} 0.07483477 736                      736
+\end{verbatim}
+次に、相関ルール抽出をapriori関数を使用した導いた結果を示す。なお、パラメータはデフォルト。\par
+結果は相関ルールとして検出されたルールは１つもなかった。\par
+次に、パラメータを次のようにしてapriori関数を実行してみる。
+\begin{itemize}
+  \item support=0.05
+  \item confidence = 0.4
+\end{itemize}
+その時の結果は下記
+\begin{verbatim}
+  > inspect(groce.rules)
+    lhs         rhs          support   confidence coverage  lift     count
+[1] {yogurt} => {whole milk} 0.0560244 0.4016035  0.1395018 1.571735 551
+\end{verbatim}
+また、パラメータを次のようにして再びapriori関数を実行してみる。
+\begin{itemize}
+  \item support=0.11
+  \item confidence = 0.08
+\end{itemize}
+その時の結果は下記
+\begin{verbatim}
+  lhs    rhs                support   confidence coverage lift count
+[1] {}  => {bottled water}    0.1105236 0.1105236  1        1    1087
+[2] {}  => {soda}             0.1743772 0.1743772  1        1    1715
+[3] {}  => {yogurt}           0.1395018 0.1395018  1        1    1372
+[4] {}  => {rolls/buns}       0.1839349 0.1839349  1        1    1809
+[5] {}  => {other vegetables} 0.1934926 0.1934926  1        1    1903
+[6] {}  => {whole milk}       0.2555160 0.2555160  1        1    2513
+\end{verbatim}
 
 \section{考察}
+一番初めのデフォルト値でのapriori関数の実行結果において、条件にヒットするルールが存在しなかったのか、1つもルールが抽出されなかった。そのため、次の実験ではパラメータ「最小支持度」と「最小確信度」の値をデフォルト値よりも下げて、再び相関ルール抽出を行ってみたところ、1つのみヒットした。この相関ルール”\{yogurt\} => \{whole milk\}”のリフト値を見てみると、約1.57となているのが分かるだろう。つまり、yogurtとwhole milkの間には正の相関があると言えるだろう。\par
+次に、パラメータをsupport=0.11、confidence = 0.08としたときの相関ルール抽出では、6件ヒットしたが、左辺がすべて空集合となってしまった。加えてすべてのlift値が1になった。これは、パラメータconfidenceの値を極端に低く設定し過ぎたのが原因であると考えられる。1つ前の相関ルール抽出の結果では、左辺は空集合ではなく、要素が入っていた。\par
+以上のことから、相関ルール抽出の際にはユーザが指定するパラメータsupport、最小支持度とconfidence最小確信度の設定によって得られる相関ルールに大きな違いが出ることが分かる。今回の実験で、相関ルール抽出時にはデータセットに対し、適切なパラメータを指定しなければ良い相関ルール抽出が行えないと考えられる。
 \section{まとめ}
-
+本稿では、R言語を使用して、データGroceriesの頻出パターン抽出と相関ルール抽出を行った。結果は、頻出パターン抽出の方は適切に頻出アイテム集合を抽出することができたが、相関ルール抽出では指定するパラメータによって、ルールそのものが得られない場合があるなど、パラメータに値に大きく結果が左右された。
 \begin{thebibliography}{99}
   \bibitem 冪集合について：\url{https://mathlandscape.com/power-set/#:~:text=%E4%B8%80%E8%A8%80%E3%81%A7%E3%81%84%E3%81%86%E3%81%A8,%E3%81%AE%E9%9B%86%E5%90%88%E3%82%92%E6%8C%87%E3%81%97%E3%81%BE%E3%81%99%E3%80%82}
 \end{thebibliography}
