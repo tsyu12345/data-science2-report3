@@ -277,7 +277,7 @@
 \paragraph{確信度の逆単調性}
 \begin{gather*}
   \forall Z \subset X[ conf_{D}(X, Y) \geq conf_{D}(X \setminus Z, Y \cup Z)] \\
-  conf__{D} < min_conf \rightarrow \forall Z \subset X[conf_{D}(X \setminus Z, Y \cup Z)]
+  conf_{D} < min\_conf \rightarrow \forall Z \subset X[conf_{D}(X \setminus Z, Y \cup Z)]
 \end{gather*}
 つまり、$X, Y$の確信度が最小確信度未満であるとき、そのすべての部分集合$Z$の確信度も最小確信度未満である、という性質である。\par
 \paragraph{相関ルールの導出}
@@ -291,11 +291,19 @@
   \{c\} \Rightarrow {a, b, d} \\
   \{d\} \Rightarrow {a, b, c} \\
 \end{gather}
-このとき、各ルールの確信度を計算したとして、ルール(1)が最小確信度未満である場合、そのルールとそのルールの先で考えられる新たなルール(そのルールの先にある全部分集合)は相関ルールから除外され、以降確信度の計算は行われない。
-\parこのようにして、実際には確信度を計算しながらパターン空間を生成し最終的な相関ルールの抽出を行っている。なお、バックトラック法とアプリオリアルゴリズムの詳しい説明に関しては頻出パターン抽出のときと同じなので、ご一読いただきたい。
+このとき、各ルールの確信度を計算したとして、ルール(1)が最小確信度未満である場合、そのルールとそのルールの先で考えられる新たなルール(そのルールの先にある全部分集合)は相関ルールから除外され、以降確信度の計算は行われない。\par
+このようにして、実際には確信度を計算しながらパターン空間を生成し最終的な相関ルールの抽出を行っている。なお、バックトラック法とアプリオリアルゴリズムの詳しい説明に関しては頻出パターン抽出のときと同じなので、ご一読いただきたい。
 \subsubsection{相関ルール分析の評価基準}
 \paragraph{支持度と確信度の弱点}
 \paragraph{Lift値}
+上記に示した弱点を補うために、相関ルール評価のための指標の１つとしてLift値が存在する。これは、$X$と$Y$が独立であると仮定した場合の比となる。具体的な式は下記の通り。
+\begin{gather*}
+  ※P(A):Aの生起確率\\
+  lift(X \Rightarrow Y) = \frac{P(X\cup Y)}{P(X)\times P(Y)} = \frac{P(Y | X)\times P(X)}{P(X)\times P(Y)} \\
+  = \frac{P(Y | X)}{P(Y)}
+\end{gather*}
+このとき、分母である$P(Y)$は$Y$の支持度である。また分子はルール$X \Rightarrow Y$の確信度である。このことから、Lift値は$\frac{X \Rightarrow Yの確信度}{Yの支持度}$と言える。ただし、このときの分母は$Y$の事前確率によって正規化されなければならない。\par
+ただし、Lift値には大きな欠点がある。それは「ルールの方向」を無視している点にある。つまり、2つのルール$X \Rightarrow Y$と$Y\Rightarrow X$のリフト値が全く同じになるということである。
 \paragraph{confrict値}
 
 
